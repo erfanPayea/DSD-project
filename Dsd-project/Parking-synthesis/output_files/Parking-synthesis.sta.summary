@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'car_entered'
+Slack : -11.102
+TNS   : -685.299
+
+Type  : Slow 1200mV 85C Model Setup 'car_exited'
+Slack : -5.593
+TNS   : -325.868
+
+Type  : Slow 1200mV 85C Model Setup 'hour[0]~reg0'
+Slack : -5.304
+TNS   : -100.908
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.082
+TNS   : -194.346
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -2.021
+TNS   : -37.482
+
+Type  : Slow 1200mV 85C Model Hold 'car_entered'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'car_exited'
+Slack : 0.345
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'hour[0]~reg0'
+Slack : 0.506
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'car_entered'
+Slack : -3.000
+TNS   : -67.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'car_exited'
+Slack : -3.000
+TNS   : -67.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -67.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'hour[0]~reg0'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'car_entered'
+Slack : -9.871
+TNS   : -607.002
+
+Type  : Slow 1200mV 0C Model Setup 'car_exited'
+Slack : -4.922
+TNS   : -286.878
+
+Type  : Slow 1200mV 0C Model Setup 'hour[0]~reg0'
+Slack : -4.603
+TNS   : -86.158
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.530
+TNS   : -167.457
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -1.847
+TNS   : -35.424
+
+Type  : Slow 1200mV 0C Model Hold 'car_entered'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'car_exited'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'hour[0]~reg0'
+Slack : 0.591
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'car_entered'
+Slack : -3.000
+TNS   : -67.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'car_exited'
+Slack : -3.000
+TNS   : -67.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -67.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'hour[0]~reg0'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'car_entered'
+Slack : -5.801
+TNS   : -360.238
+
+Type  : Fast 1200mV 0C Model Setup 'car_exited'
+Slack : -2.752
+TNS   : -158.169
+
+Type  : Fast 1200mV 0C Model Setup 'hour[0]~reg0'
+Slack : -2.662
+TNS   : -44.228
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.861
+TNS   : -82.267
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -1.265
+TNS   : -24.531
+
+Type  : Fast 1200mV 0C Model Hold 'car_entered'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'car_exited'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'hour[0]~reg0'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'car_exited'
+Slack : -3.000
+TNS   : -69.582
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'car_entered'
+Slack : -3.000
+TNS   : -68.865
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -67.403
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'hour[0]~reg0'
+Slack : 0.263
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,66 @@
+module CU (
+    input clk, car_entered, is_uni_car_entered, car_exited, is_uni_car_exited,
+    output integer uni_parked_car = 0, parked_car = 0, uni_vacated_space = 0, vacated_space = 0,
+    output reg uni_is_vacated_space, is_vacated_space
+);
+
+    integer second_counter = 0;
+    integer hour = 8;
+    integer max_uni_vacated_space = 500;
+    integer max_vacated_space = 200;
+    integer parking_space = 700;
+
+    always @(posedge clk) begin
+        if (second_counter == 3600) begin
+            second_counter = 0;
+            hour = hour + 1;
+        end
+        second_counter = second_counter + 1;
+    end
+
+    always @(hour) begin
+        if (hour >= 16)
+            max_vacated_space = max_vacated_space + 150;
+        else if (hour >= 13)
+            max_vacated_space = max_vacated_space + 50;
+    end
+
+    always @(*) begin
+        parking_space = 700 - parked_car - uni_parked_car;
+
+        if (max_uni_vacated_space - uni_parked_car < parking_space)
+            uni_vacated_space = max_uni_vacated_space - uni_parked_car;
+        else uni_vacated_space = parking_space;
+
+        if (max_vacated_space - parked_car < parking_space)
+            vacated_space = max_vacated_space - parked_car;
+        else vacated_space = parking_space;
+
+        uni_is_vacated_space <= uni_vacated_space > 0;
+        is_vacated_space <= vacated_space > 0;
+    end
+
+    always @(posedge car_entered) begin
+        if (is_uni_car_entered) begin
+            if (uni_vacated_space > 0)
+                uni_parked_car = uni_parked_car + 1;
+        end
+
+        else begin
+            if (vacated_space > 0)
+                parked_car = parked_car + 1;
+        end
+    end
+
+    always @(posedge car_exited) begin
+        if (is_uni_car_exited) begin
+            if (uni_parked_car > 0)
+                uni_parked_car = uni_parked_car - 1;
+        end
+        else begin
+            if (parked_car > 0)
+                parked_car = parked_car - 1;
+        end
+    end
+
+endmodule
